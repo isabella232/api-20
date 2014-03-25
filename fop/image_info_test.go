@@ -1,9 +1,9 @@
 package fop
 
 import (
+	. "github.com/qiniu/api/conf"
 	"os"
 	"testing"
-	. "github.com/qiniu/api/conf"
 )
 
 func init() {

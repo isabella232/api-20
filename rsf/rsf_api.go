@@ -1,14 +1,14 @@
 package rsf
 
 import (
-	"io"
 	"errors"
-	"strconv"
-	"net/url"
-	"net/http"
-	"github.com/qiniu/rpc"
 	"github.com/qiniu/api/auth/digest"
 	. "github.com/qiniu/api/conf"
+	"github.com/qiniu/rpc"
+	"io"
+	"net/http"
+	"net/url"
+	"strconv"
 )
 
 // ----------------------------------------------------------
@@ -18,11 +18,11 @@ type ListItem struct {
 	Hash     string `json:"hash"`
 	Fsize    int64  `json:"fsize"`
 	PutTime  int64  `json:"putTime"`
-	MimeType string	`json:"mimeType"`
-	EndUser  string	`json:"endUser"`
+	MimeType string `json:"mimeType"`
+	EndUser  string `json:"endUser"`
 }
 
-type ListRet struct{
+type ListRet struct {
 	Marker string     `json:"marker"`
 	Items  []ListItem `json:"items"`
 }
